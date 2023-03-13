@@ -81,4 +81,11 @@ osztály a megadott tantárgyat csoportbontásban vagy osztályszinten tanulja-e
 (Feltételezheti, hogy a megadott osztály tanulja a megadott tantárgyat.) 
 """
 
+print("6. feladat")
+be_osztaly=input("Osztály= ") or "10.b" 
+be_tantargy=input("Tantárgy= ") or "kemia"
+print(f"Csoportbontásban tanulják.")
 
+index=0
+while index<len(beosztasok) and not beosztasok[index]["osztaly"]==be_osztaly and beosztasok[index]["tantargy"]==be_tantargy:
+    index+=1
